@@ -8,7 +8,6 @@
 void main()
 {
 FILE *ipt, *opt;
-char readTrip;
 char str[BUFFER_SIZE];
 ipt = fopen("sample.txt", "r");
 opt = fopen("out.txt", "w");
