@@ -11,7 +11,7 @@ void main()
          char str[BUFFER_SIZE];
          ipt = fopen("sample.txt", "r");
          opt = fopen("out.txt", "w");
-         if ((ipt == NULL) || (opt == NULL)
+         if ((ipt == NULL) || (opt == NULL))
                 printf("File doesn't exist ");
          while (fgets(str, BUFFER_SIZE, ipt) != NULL) {
                  int index = -1, i = 0;
