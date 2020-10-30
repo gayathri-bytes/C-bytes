@@ -4,17 +4,17 @@
 #include <sys/types.h>
 #include <dirent.h>
 
-void lsSim(const char *path);
+void simulate_ls(const char *path);
 
 void main()
 {
          char path[100];
-         printf("ENTER THE PATH TO DIRECTORY: ");
+         printf("Enter the path of the directory: ");
          scanf("%s", path);
-         lsSim(path);
+         simulate_ls(path);
 }
 
-void lsSim(const char *path)
+void simulate_ls(const char *path)
 {
           struct dirent *dirI;
           DIR *dir = opendir(path);
